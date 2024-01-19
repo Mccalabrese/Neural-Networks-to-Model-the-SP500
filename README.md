@@ -19,9 +19,12 @@ Models and weights are saved within the Model_Results repository.
 
 **LR Confusion Matrix**
 ![image](https://raw.githubusercontent.com/Mccalabrese/Project-2/main/Reports/lr_confusion_matrix.png)
+
 **RNN Confusion Matrix**
 ![image](https://raw.githubusercontent.com/Mccalabrese/Project-2/main/Reports/nn_confusion_matrix.png)
+
 **Lstm Confusion Matrix**
 ![image](https://raw.githubusercontent.com/Mccalabrese/Project-2/main/Reports/lstm_confusion_matrix.png)
+
 **Cumulative Returns Plot**
 ![image](https://raw.githubusercontent.com/Mccalabrese/Project-2/main/Plots/cumulative_returns_plot.png)
