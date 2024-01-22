@@ -1,21 +1,12 @@
-### Project Overview:
+# Project 2: Avoiding Bear Markets
 
-Can we produce a model that can predict bear markets for the SP500, based on treasury bond yields, market volatility and yield curves?
+## Project Summary
 
-Cyclical markets have been a fundamental issue since the dawn of capitalism. With the rise of AI and machine learning in finance, many firms are opting to automate predictions of bear markets, as opposed to trusting the intuition and experience of portfolio managers. Can we bring new tools to an old problem?
+The purpose of this project is to try to predict bear markets using only S&P 500 and treasury bond information.  Our derived information includes other factors about market performance, including market volatility and yield curves.
 
-There were recognizable patterns and our model did in fact beat the market.
+To complete this project, we found relevant data, loaded it, and prepared it for modeling.  We created five possible trading signals before ultimately selecting one.  We created a data set containing 21 features used to train the models.  We trained three different models on the same features dataset, using the same training and testing windows (31.5 years and 16 years, respectively).  We evaluated the model performance using confusion matrices, classification reports, and financial performance information through backtesting.
 
-### Usage and Installation Instructions:
-
-Origional Data is saved within the Data_Files repository.
-
-sp_treasury_bond_model.ipynb contains the jupyter lab file that created our model. *This file should not be run, it will create a new model and overwrite the existing saved models.*
-
-Models and weights are saved within the Model_Results repository.
-
-
-### Results and Summary:
+## Project Results:
 
 **LR Confusion Matrix**
 
@@ -32,3 +23,38 @@ Models and weights are saved within the Model_Results repository.
 **Cumulative Returns Plot**
 
 ![image](https://raw.githubusercontent.com/Mccalabrese/Project-2/main/Plots/cumulative_returns_plot.png)
+
+## File Description
+
+This repository contains the relevant files for our group project.
+
+### Primary Code
+
+All of the primary code can be found in the Jupyter notebook titled "sp_treasury_bond_model.ipynb", which is located in this folder.  Note that if this Jupyter file is run, it will overwrite the existing NN and LSTM models in the notebook, because the models are not reproducible.  For the current models, please see the model files in the Model_Results folder.
+
+### Data Files
+
+All of the data files can be found in the Data_Files folder.  Note that not all of the data files in this folder were ultimately used to build the model, but we left them in the folder structure as additional resources.  The key data files can be found in:
+
+- DTB3.csv (3M treasury bond)
+- us_treasury_yields_daily.csv (2Y and 10Y treasury bond)
+- GSPC_from_yahoo_finance.csv (S&P 500)
+
+### Model Files
+
+The model result files (JSON and h5) for the RNN and LSTM models can be found in the Model_Results folder.
+
+### Plots
+
+The plots for the signal returns and the model returns can be found in the Plots folder:
+
+- signals_plot.png (signal returns)
+- cumulative_returns_plot.png (model returns)
+
+### Confusion Matrices
+
+The confusion matrices for the models can be found in the Reports folder:
+
+- lr_confusion_matrix.png (Logistic regression)
+- nn_confusion_matrix.png (RNN)
+- lstm_confusion_matrix.png (LSTM)
