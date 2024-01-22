@@ -37,7 +37,7 @@ All of the primary code can be found in the Jupyter notebook titled "sp_treasury
 All of the data files can be found in the Data_Files folder.  Note that not all of the data files in this folder were ultimately used to build the model, but we left them in the folder structure as additional resources.  The key data files can be found in:
 
 - DTB3.csv (3M treasury bond)
-- us_treasury_yields_daily.csv (2Y and 10Y treasury bond)
+- us_treasury_yields_daily.csv (1Y and 10Y treasury bond)
 - GSPC_from_yahoo_finance.csv (S&P 500)
 
 ### Model Files
