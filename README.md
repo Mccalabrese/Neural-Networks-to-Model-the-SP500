@@ -1,4 +1,4 @@
-# Project 2: Avoiding Bear Markets
+# Avoiding Bear Markets
 
 ## Project Summary
 
